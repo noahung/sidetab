@@ -1,0 +1,62 @@
+.cstp-side-tab {
+    position: fixed;
+    top: 50px;
+    height: auto;
+    width: 60px;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.cstp-side-tab.left {
+    left: -60px;
+}
+
+.cstp-side-tab.right {
+    right: -60px;
+}
+
+.cstp-side-tab.expanded.left {
+    transform: translateX(60px);
+}
+
+.cstp-side-tab.expanded.right {
+    transform: translateX(-60px);
+}
+
+.cstp-toggle-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+}
+
+.cstp-content {
+    display: none;
+    flex-direction: column;
+}
+
+.cstp-side-tab.expanded .cstp-content {
+    display: flex;
+}
+
+.cstp-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.cstp-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
