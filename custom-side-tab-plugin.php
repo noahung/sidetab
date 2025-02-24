@@ -4,6 +4,7 @@ Plugin Name: Custom Side Tab Plugin
 Description: A customizable side tab with buttons for WordPress websites.
 Version: 1.0
 Author: Noah Aung
+Plugin Icon: logo.png
 */
 
 // Prevent direct access
